@@ -60,6 +60,7 @@ export const HousesView = /*html*/
         </form>
       </div>
   </div>
+  
     <section class="row justify-content-center" id="houses">
       <!-- STUB House template -->
       <div class="col-md-10 elevation-5 rounded-top">

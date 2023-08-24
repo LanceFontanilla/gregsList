@@ -4,6 +4,7 @@ import { EventEmitter } from "./utils/EventEmitter.js"
 import { isValidProp } from "./utils/isValidProp.js"
 import { loadState } from "./utils/Store.js"
 import { House } from "./models/House.js"
+import { Job } from "./models/Job.js"
 
 class ObservableAppState extends EventEmitter {
   page = ''
@@ -34,8 +35,33 @@ class ObservableAppState extends EventEmitter {
   //     description: "The Savanna will exceed all of your expectations."
   //   })
   // ]
-  cars = loadState('cars', [Car])
+
   houses = loadState('houses', [House])
+
+  jobs = [
+    new Job({
+      jobTitle: "Bartender",
+      salary: 6.50,
+      description: "Looking for Bartender",
+      employmentType: "part-time",
+      imgUrl: ""
+    }),
+    new Job({
+      jobTitle: "Barback",
+      salary: 15,
+      description: "Looking for Barback",
+      employmentType: "part-time",
+    }),
+    new Job({
+      jobTitle: "Security",
+      salary: 18,
+      description: "Looking for Security",
+      empoloymentType: "full-time",
+    })
+
+  ]
+
+  cars = loadState('cars', [Car])
   // cars = [
 
   //   new Car({

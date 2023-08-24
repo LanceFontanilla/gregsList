@@ -33,6 +33,8 @@ export class House {
               <span>${this.sqft} SqFt</span>
               <span>|</span>
               <span>Built: ${this.year}</span>
+              <span>${this.listingDate.toLocaleDateString()}</span>
+            </div>
             </div>
             <span class="text-center">${this.address}</span>
             <p>${this.description}</p>
