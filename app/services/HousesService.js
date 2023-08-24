@@ -7,7 +7,7 @@ function _saveHouses() {
 }
 
 class HousesService {
-    deleteCar(houseId) {
+    deleteHouse(houseId) {
         let foundHouse = AppState.houses.find(house => house.id == houseId)
 
         let filteredHouseArr = AppState.houses.filter(house => house.id != houseId)
