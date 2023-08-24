@@ -80,7 +80,7 @@ export const CarsView =/*html*/
             <p>Description</p>
           </div>
         </div>
-      </div> -->
+      </div>
 
     </section>
   

@@ -37,29 +37,31 @@ class ObservableAppState extends EventEmitter {
   // ]
 
   houses = loadState('houses', [House])
+  jobs = loadState('jobs', [Job])
+  // jobs = [
+  //   new Job({
+  //     jobTitle: "Bartender",
+  //     salary: 6.50,
+  //     description: "Looking for Bartender",
+  //     employmentType: "part-time",
+  //     imgUrl: "https://media.timeout.com/images/105502506/750/562/image.jpg"
+  //   }),
+  //   new Job({
+  //     jobTitle: "Barback",
+  //     salary: 15,
+  //     description: "Looking for Barback",
+  //     employmentType: "part-time",
+  //     imgUrl: "https://media.timeout.com/images/105502506/750/562/image.jpg"
+  //   }),
+  //   new Job({
+  //     jobTitle: "Security",
+  //     salary: 18,
+  //     description: "Looking for Security",
+  //     employmentType: "full-time",
+  //     imgUrl: "https://media.timeout.com/images/105502506/750/562/image.jpg"
+  //   })
 
-  jobs = [
-    new Job({
-      jobTitle: "Bartender",
-      salary: 6.50,
-      description: "Looking for Bartender",
-      employmentType: "part-time",
-      imgUrl: ""
-    }),
-    new Job({
-      jobTitle: "Barback",
-      salary: 15,
-      description: "Looking for Barback",
-      employmentType: "part-time",
-    }),
-    new Job({
-      jobTitle: "Security",
-      salary: 18,
-      description: "Looking for Security",
-      empoloymentType: "full-time",
-    })
-
-  ]
+  // ]
 
   cars = loadState('cars', [Car])
   // cars = [

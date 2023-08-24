@@ -80,8 +80,10 @@ export const HousesView = /*html*/
               <span>|</span>
               <span>Year </span>
             </div>
+            <div class="d-flex justify-content-around pt-3">
             <span class="text-center">Address</span>
             <p>Description</p>
+            </div>
           </div>
         </div>
       </div>

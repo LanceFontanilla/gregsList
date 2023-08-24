@@ -7,7 +7,7 @@ import { ValuesController } from "./controllers/ValuesController.js";
 import { AboutView } from "./views/AboutView.js";
 import { CarsView } from "./views/CarsView.js";
 import { HousesView } from "./views/HousesView.js";
-
+import { JobsView } from "./views/JobsView.js";
 
 export const router = [
   {
@@ -134,7 +134,7 @@ export const router = [
   {
     path: '#/jobs',
     controller: JobsController,
-    view: /*html*/ ``
+    view: JobsView
   },
 
 ]
