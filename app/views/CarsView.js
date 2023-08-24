@@ -1,5 +1,6 @@
-export const CarsView =/*html*/`
-    <div class="container-fluid">
+export const CarsView =/*html*/
+  `
+<div class="container-fluid">
   <section class="row">
     <button class="btn btn-info col-1" data-bs-toggle="collapse" data-bs-target="#carFormCollapse">
       List Car! <i class="mdi mdi-car"></i>

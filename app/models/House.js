@@ -3,21 +3,21 @@ import { generateId } from "../utils/generateId.js"
 
 export class House {
 
-    constructor(data) {
-        this.id = generateId()
-        this.address = data.address
-        this.room = data.room
-        this.bath = data.bath
-        this.sqft = data.sqft
-        this.year = data.year
-        this.imgUrl = data.imgUrl
-        this.price = data.price
-        this.description = data.description
-        this.listingDate = new Date()
-    }
-    get HousesTemplate() {
-        return /*html*/ `
-      <div class="col-md-10 elevation-5 rounded-top">
+  constructor(data) {
+    this.id = generateId()
+    this.address = data.address
+    this.room = data.room
+    this.bath = data.bath
+    this.sqft = data.sqft
+    this.year = data.year
+    this.imgUrl = data.imgUrl
+    this.price = data.price
+    this.description = data.description
+    this.listingDate = new Date()
+  }
+  get HousesTemplate() {
+    return /*html*/ `
+      <div class= "col-md-10 elevation-5 rounded-top my-2" style= "border: 2px solid">
         <div class="row">
           <div class="col-4 p-0">
             <img class="img-fluid rounded-start"
@@ -36,10 +36,13 @@ export class House {
             </div>
             <span class="text-center">${this.address}</span>
             <p>${this.description}</p>
+             <div class="text-end py-2">
+                <button class="btn btn-danger" onclick="app.HousesController.deleteHouse('${this.id}')">Remove Listing <i class="mdi mdi-delete"></i> </button>
+            </div>
           </div>
         </div>
       </div>`
-    }
+  }
 
 
 }

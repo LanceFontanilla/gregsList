@@ -12,30 +12,30 @@ class ObservableAppState extends EventEmitter {
   values = loadState('values', [Value])
 
 
-  houses = [
-    new House({
-      address: "2103 N Heritage Way Meridian, ID 83646",
-      room: 5,
-      bath: 3,
-      sqft: 3023,
-      year: 2007,
-      imgUrl: "https://photos.zillowstatic.com/fp/aed00a76c56232b0ad968b34c3ae729a-cc_ft_960.webp",
-      price: 450000,
-      description: "Beautiful house"
-    }),
-    new House({
-      address: "974 E Esquel St, Kuna, ID 83634",
-      room: 4,
-      bath: 3,
-      sqft: 2630,
-      year: 2023,
-      imgUrl: "https://photos.zillowstatic.com/fp/a1bd1bdae4ab2ef8bfcfa2ceed1bd8c6-o_a.webp",
-      price: 675000,
-      description: "The Savanna will exceed all of your expectations."
-    })
-  ]
+  // houses = [
+  //   new House({
+  //     address: "2103 N Heritage Way Meridian, ID 83646",
+  //     room: 5,
+  //     bath: 3,
+  //     sqft: 3023,
+  //     year: 2007,
+  //     imgUrl: "https://photos.zillowstatic.com/fp/aed00a76c56232b0ad968b34c3ae729a-cc_ft_960.webp",
+  //     price: 450000,
+  //     description: "Beautiful house"
+  //   }),
+  //   new House({
+  //     address: "974 E Esquel St, Kuna, ID 83634",
+  //     room: 4,
+  //     bath: 3,
+  //     sqft: 2630,
+  //     year: 2023,
+  //     imgUrl: "https://photos.zillowstatic.com/fp/a1bd1bdae4ab2ef8bfcfa2ceed1bd8c6-o_a.webp",
+  //     price: 675000,
+  //     description: "The Savanna will exceed all of your expectations."
+  //   })
+  // ]
   cars = loadState('cars', [Car])
-
+  houses = loadState('houses', [House])
   // cars = [
 
   //   new Car({

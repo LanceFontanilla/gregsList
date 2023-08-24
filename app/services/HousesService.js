@@ -20,7 +20,7 @@ class HousesService {
         AppState.houses.push(newHouse)
         console.log(AppState.houses)
         AppState.emit('houses')
-        _saveHouses
+        _saveHouses()
     }
 }
 
